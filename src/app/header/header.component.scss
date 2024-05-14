@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #fc353a;
+    border-radius: 36px 36px 0 0;
+    padding: 36px 0 8px 0;
+
+
+    .header-content-wrapper {
+        margin: 0 92px;
+    }
+
+    .navbar-nav {
+        background-color: rgba(255, 255, 255, 0.21);
+        border-radius: 50px;
+        color: #FFFFFF;
+        padding: 6px 8px;
+        transition: background-color 0.3s, color 0.3s;
+
+        .nav-link {
+            font-size: 14px;
+            font-weight: 500;
+            padding: 4px 20px;
+            border-radius: 50px;
+
+            &.active {
+                background-color: #FFFFFF;
+                color: #fc353a !important;
+            }
+        }
+    }
+
+    .logo-title-wrapper {
+        font-size: 32px;
+        width: 120px;
+        text-align: center;
+        line-height: 0.8;
+    }
+
+    .signin-btn-wrapper {
+        background-color: #FFFFFF;
+        color: #fc353a;
+        border: 1px solid #FFFFFF;
+        border-radius: 50px;
+        padding: 4px 16px;
+    }
+
+    .signup-btn-wrapper {
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 50px;
+        padding: 4px 16px;
+    }
+
+    .offcanvas {
+        background-color: #333333;
+    }
+}
+
+::ng-deep {
+    .offcanvas-start {
+        width: 280px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav .nav-link {
+        color: #000000;
+
+        &:hover {
+            color: #000000;
+        }
+    }
+
+    .header-content-wrapper {
+        margin: 0 !important;
+    }
+
+    .signup-btn-wrapper {
+        margin-right: 8px;
+    }
+}

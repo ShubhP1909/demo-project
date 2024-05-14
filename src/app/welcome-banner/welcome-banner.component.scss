@@ -1,0 +1,123 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fc353a;
+    border-radius: 36px;
+}
+
+.image-content,
+.text-content {
+    box-sizing: border-box;
+}
+
+.download-app-content-wrapper {
+    padding-right: 160px;
+}
+
+.title-wrapper {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.description-wrapper {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.app-store-img-wrapper,
+.playstore-img-wrapper {
+    height: 100px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.welcome_img_wrapper {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.background-section {
+    position: relative;
+    background-image: url('../../assets/images/map_background_img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+
+.overlay-text {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-text-wrapper {
+    background-color: white;
+    border-radius: 50px;
+    margin: 40px 0 0 30px;
+}
+
+.overlay-text-title {
+    padding: 16px 50px;
+    width: 385px;
+    text-align: start;
+    font-size: 54px;
+    color: #fc353a;
+}
+
+.cities-title-wrapper {
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.country-title-wrapper {
+    p {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+}
+
+.cities-content-wrapper {
+    padding: 0 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        margin-top: 48px !important;
+    }
+
+    .download-app-content-wrapper {
+        padding: 0 24px !important;
+    }
+
+    .background-section {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .overlay-text-wrapper {
+        margin: 0 !important;
+    }
+
+    .cities-content-wrapper {
+        padding: 0 24px;
+        text-align: center;
+    }
+}

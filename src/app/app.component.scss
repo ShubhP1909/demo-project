@@ -1,0 +1,9 @@
+.app-container-wrapper {
+    padding: 16px 28px;
+}
+
+@media screen and (max-width: 768px) {
+    .app-container-wrapper {
+        padding: 8px;
+    }
+}
