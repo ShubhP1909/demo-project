@@ -75,7 +75,7 @@
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .image-content {
         clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
         padding-top: 36px !important;
